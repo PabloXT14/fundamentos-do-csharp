@@ -67,3 +67,17 @@ namespace FibonacciTest
 - Durante a execução/compilação, todos os arquivos do C# serão unificados
 - A divisão física se perderá
 - Sobrará apenas a divisão lógica, que são os namespaces
+
+## Using
+
+- Importações definem as bibliotecas que nosso programa irá utilizar
+- Por padrão só o básico vem incluso
+- Precisamos importar o que desejamos para poder trabalhar
+- Isto é feito no começo do programa
+- Utilizamos a palavra-chave reservada `using` para isso
+- Organizar nosso código em pastas e namespaces é fundamental
+- Em aplicações grandes, o volume de código é alto
+- A quantidade de arquivos é alta
+- E o número de pessoas trabalhando no mesmo projeto também
+- Entender bem esta organização é fundamental
+- Use e abuse da criação de arquivos e namespaces
