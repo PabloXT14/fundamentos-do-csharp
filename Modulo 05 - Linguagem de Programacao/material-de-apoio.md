@@ -81,3 +81,29 @@ namespace FibonacciTest
 - E o número de pessoas trabalhando no mesmo projeto também
 - Entender bem esta organização é fundamental
 - Use e abuse da criação de arquivos e namespaces
+
+## Variáveis
+
+- Uma variável é algo que utilizamos para armazenar uma informação
+- Ser variável significa que seu valor pode ser alterado a qualquer momento
+- Ou seja, ele pode variar
+- Sempre que "criamos"/"instanciamos" uma variável, dizemos que estamos inicializando ela
+- Podemos usar um TIPO ou palavra-chave reservada `var` para criar uma variável
+- Vamos aprender ainda sobre tipos de dados
+- No C# o tipo vem sempre antes do nome da variável
+- Podemos informar um valor já na criação da variável
+- Se não informado o valor padrão será aplicado
+
+Exemplo:
+```cs
+int idade; // Correto, inicia com ZERO
+int idade = 25; // Correto, inicia com 25
+var idade = 25; // Correto, inicia com 25
+var idade; // Errado
+```
+
+Padronização de Nomes:
+- Utilize nomes coesos
+- Não utilize caracteres especiais ou espaços
+- Não comece com números
+- A primeira letra de cada palavra é **SEMPRE** minúscula 
