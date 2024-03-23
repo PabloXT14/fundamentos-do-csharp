@@ -145,3 +145,25 @@ Padronização de Nomes:
 Tabela de keywords:
 ![Tabela de keywords do C# 01](./assets/keywords.png)
 ![Tabela de keywords do C# 02](./assets/keywords-02.png)
+
+## Comentários
+
+- Em diversos cenários você precisará deixar uma mensagem
+- Essa mensagem não deve ser executada pelo programa
+- É comum utilizarmos comentários em linhas que não desejamos executar também
+- Podemos ter comentários de:
+    - Uma linha
+    - Múltiplas linhas
+    - XML (Metadata)
+
+Exemplo:
+```cs
+// Comentário em uma linha
+
+/*
+    Comentário em várias
+    linhas
+*/
+
+/// Notação XML (Metadata)
+```

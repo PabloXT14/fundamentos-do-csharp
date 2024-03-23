@@ -3,16 +3,21 @@ using MeuApp.Test;
 
 namespace MeuApp
 {
+    /// <properties> Notação XML (Metadata)
     class Program
     {
         static void Main(string[] args)
         {
-            // const int IDADE_MINIMA; // Correto, inicia com ZERO
-            const int IDADE_MINIMA = 25; // Correto, inicia com 25
-            // const var IDADE_MINIMA = 25; // Errado
-            // const var IDADE_MINIMA; // Errado
+            // Comentário de uma linha
 
-            Console.WriteLine("Hello, World!");
+            /*
+                Comentário de várias
+                linhas
+            */
+
+            var text = "Hello, World!";
+
+            Console.WriteLine(text);
         }
     }
 }
