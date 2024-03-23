@@ -134,3 +134,14 @@ Padronização de Nomes:
 - Não comece com números
 - É comum vermos constantes todas em maiúsculas, separadas por `_`
 - A ideia é bater o olho no código e saber que aquilo é uma constante
+
+## Palavras reservadas
+
+- Também chamados de **keywords** (palavras-chave)
+- São palavras de uso exclusivo do C#
+- Não podemos utilizar como nomes de variáveis ou constantes
+- O Visual Studio Code vai te avisar sobre elas
+
+Tabela de keywords:
+![Tabela de keywords do C# 01](./assets/keywords.png)
+![Tabela de keywords do C# 02](./assets/keywords-02.png)
