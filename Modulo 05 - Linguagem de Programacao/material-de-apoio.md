@@ -107,3 +107,30 @@ Padronização de Nomes:
 - Não utilize caracteres especiais ou espaços
 - Não comece com números
 - A primeira letra de cada palavra é **SEMPRE** minúscula 
+
+## Constantes
+
+- Assim como as variáveis, também utilizamos uma constante para armazenar uma informação
+- As constantes NÃO PODEM ser alteradas
+- Uma vez criadas somos obrigados a atribuir um valor
+- Feito isso elas não poderão ser modificadas novamente
+- Não funcionam com a utilização de `var`
+- São mais otimizadas que as variáveis
+- Recomendadas para usos frequentes
+- A definição de constante é dada pela palavra-chave reservada `const` antes do tipo
+- Caso não seja informado um valor, o valor padrão será atribuído
+
+Exemplo:
+```cs
+const int IDADE_MINIMA; // Correto inicia com ZERO
+const int IDADE_MINIMA = 25; // Correto inicia com 25
+const var IDADE_MINIMA = 25; // Errado
+const var IDADE_MINIMA; // Errado
+```
+
+Padronização de Nomes:
+- Utilize nomes coesos
+- Não utilize caracteres especiais ou espaços
+- Não comece com números
+- É comum vermos constantes todas em maiúsculas, separadas por `_`
+- A ideia é bater o olho no código e saber que aquilo é uma constante
