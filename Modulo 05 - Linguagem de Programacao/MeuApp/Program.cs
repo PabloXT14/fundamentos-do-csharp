@@ -6,12 +6,21 @@ namespace MeuApp
     {
         static void Main(string[] args)
         {
-            byte meuByte = 127;
+            // short age = 25; // Correct
+            // ushort age = 25; // Correct
+            // ushort age = -25; // Error
+
+            // int age = 25; // Correct
+            // uint age = 25; // Correct
+            // uint age = -25; // Error
+
+            // long age = 25; // Correct
+            // ulong age = 25; // Correct
+            // ulong age = -25; // Error
 
             var text = "Hello, World!";
 
             Console.WriteLine($"Texto: {text}");
-            Console.WriteLine($"Byte: {meuByte}");
         }
     }
 }
