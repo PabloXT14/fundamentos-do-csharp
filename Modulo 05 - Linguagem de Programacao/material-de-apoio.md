@@ -167,3 +167,21 @@ Exemplo:
 
 /// Notação XML (Metadata)
 ```
+
+## Tipos primitivos
+
+- Também conhecidos como `build-in-types`
+- São tipos de dados base cujo os outros tipos (`complexos`) irão derivar
+- Definir o tipo correto otimiza a execução do programa
+- Também são chamados de **Tipos de Valor**
+- Armazenam um valor e não a referência para um item na memória
+- São classificados em:
+    - Tipos Simples (`Simple Types`)
+    - Enumeradores (`Enums`)
+    - Estruturas (`Structs`)
+    - Tipos Nulos (`Nullable Types`) 
+- Cada tipo possui uma capacidade (de quando de dado ele consegue conter/guardar)
+- Caso esta capacidade exceda, o programa gera um erro
+- Esta capacidade pré-definida ajuda na otimização do seu programa
+- Por exemplo, o `int` que usamos previamente:
+    - `-2,147,483,648` até `2,147,483,647`
