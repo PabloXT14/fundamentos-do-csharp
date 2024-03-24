@@ -193,3 +193,22 @@ Exemplo:
 - Ele é a base de todos os objetos no .NET
 - Não precisamos nos preocupar em usá-lo ou qualquer coisa similar
 - Seu uso já é implícito
+
+## Byte
+
+- É um tipo primitivo (`build-in`)
+- O tipo `byte` é utilizado para representar um byte de fato (ou seja, qualquer combinação de 8 bits)
+- Em diversos casos precisamos da cadeia de bytes de um arquivo, por exemplo
+    - Também chamado de `byte array`
+- Temos também o `sbyte`, que permite valores negativos
+
+> **Signed** e **Unsigned**
+>
+> Valores com sinal como `-` por exemplo, são chamados de signed. 
+
+- 1 byte (8-bit)
+    - 0 até 255
+- 1 sbyte (8-bit)
+    - -128 até 127
+
+> Note que o `sbyte` permite valores negativos, por isso no nome `sbyte`, que significa **Signed Byte**
