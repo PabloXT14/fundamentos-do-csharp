@@ -185,3 +185,11 @@ Exemplo:
 - Esta capacidade pré-definida ajuda na otimização do seu programa
 - Por exemplo, o `int` que usamos previamente:
     - `-2,147,483,648` até `2,147,483,647`
+
+## System
+
+- No .NET tudo começa de um tipo base chamado `system`
+- Todo e qualquer tipo, seja `build-in` ou `complexo` deriva dele
+- Ele é a base de todos os objetos no .NET
+- Não precisamos nos preocupar em usá-lo ou qualquer coisa similar
+- Seu uso já é implícito

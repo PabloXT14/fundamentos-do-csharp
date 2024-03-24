@@ -1,5 +1,4 @@
-﻿using System;
-using MeuApp.Test;
+﻿// using System; // Como o System já é implícito, mesmo não importando ele, já por padrão nos tipos que precisam dele 
 
 namespace MeuApp
 {
