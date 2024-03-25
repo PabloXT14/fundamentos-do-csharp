@@ -6,21 +6,14 @@ namespace MeuApp
     {
         static void Main(string[] args)
         {
-            object someValue = "Hello World";
-            someValue = 123;
-            someValue = 1.000;
+            int? age = 0;
+            Console.WriteLine($"Idade 1: {age}");
 
-            object person = new
-            {
-                Name = "John Doe",
-                Age = 22,
-                IsWorking = true,
-                Address = "123 Main St",
-            };
+            age = null;
+            Console.WriteLine($"Idade 2: {age}");
 
-
-            Console.WriteLine($"Valor do objeto: {someValue}");
-            Console.WriteLine($"Pessoa: {person}");
+            age = 25;
+            Console.WriteLine($"Idade 3: {age}");
         }
     }
 }
