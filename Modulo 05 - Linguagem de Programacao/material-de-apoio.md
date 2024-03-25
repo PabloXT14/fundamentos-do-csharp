@@ -234,3 +234,18 @@ Exemplo:
     - `-9,223,372,036,854,775,808` até `9,223,372,036,854,775,807`
 - long (64-bit)
     - `0` até `18,446,744,073,709,551,615`
+
+## Números Reais
+
+- São números que exigem uma maior precisão, ou seja, com pontuação:
+    - `float` (Notação F)
+    - `double`
+    - `decimal` (Notação M)
+- Possuem assimilação negativa e positiva por padrão, dispensando o uso do signed/unsigned em seus tipos
+- Ocupação:
+    - float (32-bit)
+        - `-3.402823e38` até `3.402823e38`
+    - double (64-bit)
+        - `-1.79769313486232e308` até `1.79769313486232e308`
+    - decimal (128-bit)
+        - (+ ou -) `1.0 x 10e-28` até `7.9 x 10e28`

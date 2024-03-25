@@ -6,17 +6,11 @@ namespace MeuApp
     {
         static void Main(string[] args)
         {
-            // short age = 25; // Correct
-            // ushort age = 25; // Correct
-            // ushort age = -25; // Error
+            float salarioMensal = 2.500f;
+            double salarioSemestral = 15.000;
+            decimal salarioAnual = 30.000m;
 
-            // int age = 25; // Correct
-            // uint age = 25; // Correct
-            // uint age = -25; // Error
-
-            // long age = 25; // Correct
-            // ulong age = 25; // Correct
-            // ulong age = -25; // Error
+            var salario = 1.000; // padrão de valor flutuante é o double
 
             var text = "Hello, World!";
 
