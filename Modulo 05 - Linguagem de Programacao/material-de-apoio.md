@@ -286,3 +286,16 @@ Exemplo:
 var idade = 25; // Será do tipo int
 var nome = "André"; // Será do tipo string
 ```
+
+## Object
+
+- Tipo genérico que recebe qualquer valor ou objeto
+- Para caso não saiba o tipo da informação ou ela seja de vários tipos diferentes
+- Não possui intellisense (ajuda/autocomplete do editor) por ser um tipo desconhecido
+- Evite usar
+
+Exemplo:
+```cs
+object idade = 25; // Será do tipo object
+object nome = "André"; // Será do tipo object
+```
