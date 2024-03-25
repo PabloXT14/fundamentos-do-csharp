@@ -6,11 +6,11 @@ namespace MeuApp
     {
         static void Main(string[] args)
         {
-            char firstLetterName = 'P';
-            var secondLetterName = 'a';
+            string phrase = "Hello World!";
+            string name = "John Doe";
 
-            Console.WriteLine($"Primeira letra do nome: {firstLetterName}");
-            Console.WriteLine($"Segunda letra do nome: {secondLetterName}");
+            Console.WriteLine($"Frase: {phrase}");
+            Console.WriteLine($"Nome: {name}");
         }
     }
 }

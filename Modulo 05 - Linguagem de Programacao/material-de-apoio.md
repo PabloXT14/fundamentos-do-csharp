@@ -264,3 +264,12 @@ Exemplo:
 - A atribuição de um valor char é dado por **aspas simples**
 - char (16-bit)
     - Qualquer caractere
+
+## String
+
+- Armazena uma cadeia de caracteres
+- Podemos pensar nele como uma lista de `char`
+- Definido pela palavra reservada `string`
+- A atribuição de um valor string é dado por **aspas duplas**
+- string (?)
+    - Como é uma cadeia de caracteres seu tamanho pode variar
