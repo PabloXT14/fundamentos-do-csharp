@@ -332,3 +332,14 @@ Exemplo:
 int idade = 25; // Alias
 Int32 idade = 25; // Tipo
 ```
+
+## Valores Padrões
+
+- Todo tipo `built-in` (primitivo), já possui um valor padrão
+- Se nenhum valor for informado, seu valor padrão será utilizado:
+    - int => `0`
+    - float => `0`
+    - decimal => `0`
+    - bool => `false`
+    - char => `\0`
+    - string => `""`
