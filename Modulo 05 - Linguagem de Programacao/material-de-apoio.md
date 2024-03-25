@@ -249,3 +249,10 @@ Exemplo:
         - `-1.79769313486232e308` até `1.79769313486232e308`
     - decimal (128-bit)
         - (+ ou -) `1.0 x 10e-28` até `7.9 x 10e28`
+
+## Boolean
+
+- Tipo booliano, armazena apenas `true` ou `false` (verdadeiro ou falso)
+- Definido pela palavra reservada `bool`
+- bool (8-bit)
+    - `true` ou `false`

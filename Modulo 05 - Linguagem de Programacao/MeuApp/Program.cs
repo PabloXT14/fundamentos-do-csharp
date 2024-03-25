@@ -6,15 +6,11 @@ namespace MeuApp
     {
         static void Main(string[] args)
         {
-            float salarioMensal = 2.500f;
-            double salarioSemestral = 15.000;
-            decimal salarioAnual = 30.000m;
+            bool isUserRegistered = false;
+            bool paymentReceived = true;
+            var isUserExpired = false;
 
-            var salario = 1.000; // padrão de valor flutuante é o double
-
-            var text = "Hello, World!";
-
-            Console.WriteLine($"Texto: {text}");
+            Console.WriteLine(isUserRegistered);
         }
     }
 }
