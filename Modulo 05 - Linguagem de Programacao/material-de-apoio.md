@@ -273,3 +273,16 @@ Exemplo:
 - A atribuição de um valor string é dado por **aspas duplas**
 - string (?)
     - Como é uma cadeia de caracteres seu tamanho pode variar
+
+## Var
+
+- Substitui o nome de um tipo
+- Será do tipo do primeiro valor atribuído
+- Recomendado o uso
+    - Deixe para usar o `var` somente quando dominar os tipos de dados básicos
+
+Exemplo:
+```cs
+var idade = 25; // Será do tipo int
+var nome = "André"; // Será do tipo string
+```

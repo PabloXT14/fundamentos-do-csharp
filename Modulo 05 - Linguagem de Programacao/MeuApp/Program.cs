@@ -6,11 +6,11 @@ namespace MeuApp
     {
         static void Main(string[] args)
         {
-            string phrase = "Hello World!";
-            string name = "John Doe";
+            var age = 25; // será do tipo int
+            var name = "John Doe"; // será do tipo string
 
-            Console.WriteLine($"Frase: {phrase}");
             Console.WriteLine($"Nome: {name}");
+            Console.WriteLine($"Idade: {age}");
         }
     }
 }
