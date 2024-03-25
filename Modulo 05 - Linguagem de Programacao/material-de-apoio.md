@@ -256,3 +256,11 @@ Exemplo:
 - Definido pela palavra reservada `bool`
 - bool (8-bit)
     - `true` ou `false`
+
+## Char
+
+- Utilizado para armazenar apenas um caractere no formato Unicode
+- Definido pela palavra reservada `char`
+- A atribuição de um valor char é dado por **aspas simples**
+- char (16-bit)
+    - Qualquer caractere

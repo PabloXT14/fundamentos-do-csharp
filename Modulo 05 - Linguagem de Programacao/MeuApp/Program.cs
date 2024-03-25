@@ -6,11 +6,11 @@ namespace MeuApp
     {
         static void Main(string[] args)
         {
-            bool isUserRegistered = false;
-            bool paymentReceived = true;
-            var isUserExpired = false;
+            char firstLetterName = 'P';
+            var secondLetterName = 'a';
 
-            Console.WriteLine(isUserRegistered);
+            Console.WriteLine($"Primeira letra do nome: {firstLetterName}");
+            Console.WriteLine($"Segunda letra do nome: {secondLetterName}");
         }
     }
 }
