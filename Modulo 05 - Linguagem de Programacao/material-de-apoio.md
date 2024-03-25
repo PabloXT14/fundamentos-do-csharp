@@ -343,3 +343,50 @@ Int32 idade = 25; // Tipo
     - bool => `false`
     - char => `\0`
     - string => `""`
+
+## Conversão Implícita
+
+- É comum precisarmos transformar um dado do tipo X para o tipo Y
+- Exitem dois tipos de conversão, as implícitas e explícitas
+- As implícitas são conversões que:
+    - Podem ser executas apenas com passagem de dados
+    - Possuem tipos compatíveis
+
+Exemplo:
+```cs
+float number1 = 25.8f;
+int number2 = 25;
+
+number1 = number2; // Conversão implícita 
+```
+
+- A conversão anterior ocorreu pois um número real pode receber um número inteiro
+- Porém, o contrário não aconteceria, pois:
+    - Um número inteiro não tem pontuação
+    - Logo ele não poderia receber um número real
+- A conversão só ocorrerá se:
+    - O tipo de dado for compatível
+    - O tamanho do dado for compatível
+- Em caso de números a precisão pode ser alterada
+- Qualquer situação adversa causará erro
+- Tipos compatíveis:
+    - `sbyte`:
+        - Aceita: short, int, long, float, double, decimal
+    - `byte`:
+        - Aceita: short, ushort, int, uint, long, ulong, float, double, decimal
+    - `short`:
+        - Aceita: int, long, float, double, decimal
+    - `ushort`:
+        - Aceita: int, uint, long, ulong, float, double, decimal
+    - `int`:
+        - Aceita: long, float, double, decimal 
+    - `uint`:
+        - Aceita: long, ulong, float, double, decimal
+    - `long`:
+        - Aceita: float, double, decimal
+    - `ulong`:
+        - Aceita: float, double, decimal
+    - `char`:
+        - Aceita: ushort, int, uint, long, ulong, float, double, decimal
+    - `float`:
+        - Aceita: double 

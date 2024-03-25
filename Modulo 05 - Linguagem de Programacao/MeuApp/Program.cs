@@ -6,14 +6,14 @@ namespace MeuApp
     {
         static void Main(string[] args)
         {
-            int? age = 0;
-            Console.WriteLine($"Idade 1: {age}");
+            float number1 = 25.8f;
+            int number2 = 25;
 
-            age = null;
-            Console.WriteLine($"Idade 2: {age}");
+            number1 = number2; // Conversão implicita
+            // number2 = number1; // Erro de conversão implicita
 
-            age = 25;
-            Console.WriteLine($"Idade 3: {age}");
+            Console.WriteLine($"number1 = {number1}");
+            Console.WriteLine($"number2 = {number2}");
         }
     }
 }
