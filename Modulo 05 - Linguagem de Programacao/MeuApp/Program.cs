@@ -6,14 +6,11 @@ namespace MeuApp
     {
         static void Main(string[] args)
         {
-            float number1 = 25.8f;
-            int number2 = 25;
+            int inteiro = 100;
+            uint inteiroSemSinal = (uint)inteiro;
 
-            number1 = number2; // Conversão implicita
-            // number2 = number1; // Erro de conversão implicita
-
-            Console.WriteLine($"number1 = {number1}");
-            Console.WriteLine($"number2 = {number2}");
+            Console.WriteLine($"Inteiro = {inteiro}");
+            Console.WriteLine($"Inteiro Sem Sinal = {inteiroSemSinal}");
         }
     }
 }

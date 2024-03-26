@@ -390,3 +390,17 @@ number1 = number2; // Conversão implícita
         - Aceita: ushort, int, uint, long, ulong, float, double, decimal
     - `float`:
         - Aceita: double 
+
+## Conversão Explicita
+
+- Ocorre quando os tipos não são compatíveis
+- É dada pelo uso do tipo entre parênteses antes da atribuição
+- Segue as mesma regras anteriores de compatibilidade
+- Aqui se algum erro de conversão ocorrer não é informado em tempo de compilação, e sim em produção ou com o programa já executando
+- Por conta disso, esse tipo e conversão não é tão recomendado
+
+Exemplo:
+```cs
+int inteiro = 100;
+uint inteiroSemSinal = (uint)inteiro; // Conversão explícita
+```
