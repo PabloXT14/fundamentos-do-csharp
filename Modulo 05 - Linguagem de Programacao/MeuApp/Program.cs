@@ -6,11 +6,9 @@ namespace MeuApp
     {
         static void Main(string[] args)
         {
-            int inteiro = 100;
-            uint inteiroSemSinal = (uint)inteiro;
+            int inteiro = int.Parse("100");
 
-            Console.WriteLine($"Inteiro = {inteiro}");
-            Console.WriteLine($"Inteiro Sem Sinal = {inteiroSemSinal}");
+            Console.WriteLine($"Inteiro: {inteiro}");
         }
     }
 }

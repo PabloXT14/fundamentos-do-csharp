@@ -396,11 +396,22 @@ number1 = number2; // Conversão implícita
 - Ocorre quando os tipos não são compatíveis
 - É dada pelo uso do tipo entre parênteses antes da atribuição
 - Segue as mesma regras anteriores de compatibilidade
-- Aqui se algum erro de conversão ocorrer não é informado em tempo de compilação, e sim em produção ou com o programa já executando
+- Caso haja alguma incompatibilidade, gera um erro (em tempo de execução, ou seja, em produção ou quando nosso código já passou pelo processo de compilação)
 - Por conta disso, esse tipo e conversão não é tão recomendado
 
 Exemplo:
 ```cs
 int inteiro = 100;
 uint inteiroSemSinal = (uint)inteiro; // Conversão explícita
+```
+
+## Parse
+
+- Método presente em todo tipo primitivo
+- Usado para converter um caractere ou string para um tipo qualquer
+- Caso haja alguma incompatibilidade, gera um erro (em tempo de execução)
+
+Exemplo:
+```cs
+int inteiro = int.Parse("100")
 ```
