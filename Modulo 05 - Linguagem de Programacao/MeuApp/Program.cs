@@ -6,9 +6,19 @@ namespace MeuApp
     {
         static void Main(string[] args)
         {
-            int integer = Convert.ToInt32("100");
+            int integer = 100;
+            float real = 25.8f;
 
-            Console.WriteLine($"Inteiro: {integer}");
+            // real = integer; // Conversão implícita
+            // integer = (int)real; // Conversão explícita
+            // string realValueInString = real.ToString(); // ToString
+            // integer = int.Parse("255"); // Parse
+            integer = Convert.ToInt32(real); // Convert
+
+            // Console.WriteLine(realValueInString);
+            Console.WriteLine(integer);
+            Console.WriteLine(Convert.ToBoolean(0));
+            Console.WriteLine(Convert.ToBoolean(1));
         }
     }
 }
