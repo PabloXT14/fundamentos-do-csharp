@@ -409,9 +409,22 @@ uint inteiroSemSinal = (uint)inteiro; // Conversão explícita
 
 - Método presente em todo tipo primitivo
 - Usado para converter um caractere ou string para um tipo qualquer
-- Caso haja alguma incompatibilidade, gera um erro (em tempo de execução)
+- Caso haja alguma incompatibilidade, gera um erro (somente em tempo de execução), por isso devemos tomar cuidado com o seu uso.
 
 Exemplo:
 ```cs
 int inteiro = int.Parse("100")
+```
+
+## Convert
+
+- Similar ao `parse` visto anteriormente
+- Porém permite converter vários tipos de valor
+    - Não apenas string
+- Devemos informar o tipo na chamada da conversão
+- Caso haja alguma incompatibilidade, gera um erro (somente em tempo de execução), por isso devemos tomar cuidado com o seu uso.
+
+Exemplo:
+```cs
+int inteiro = Convert.ToInt32("100");
 ```
