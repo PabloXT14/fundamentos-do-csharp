@@ -428,3 +428,33 @@ Exemplo:
 ```cs
 int inteiro = Convert.ToInt32("100");
 ```
+
+## Operadores Aritméticos
+
+- Soma => `+`
+- Subtração => `-`
+- Multiplicação => `*`
+- Divisão => `/`
+- Multiplicação e divisão são executadas primeiro
+- Caso queira executar em outra ordem, utilizar parênteses
+- Aceita `short`, `int`, `long`, `float`, `double` e `decimal`
+- Em caso de uso de números inteiros
+    - Se o valor for real, será arredondado
+    - 4.4 => 5
+
+Exemplo:
+```cs
+int sum = 25 + 22; // 47
+int subtraction = 25 - 22; // 3
+int multiplication = 25 * 22; // 550
+int division = 22 / 5; // 4 - Foi arredondado 
+```
+
+- Utilizamos parênteses para redefinir a ordem de execução
+
+Exemplo:
+```cs
+int x = 2 + 2 * 2; // 6
+int y = 2 + (2 * 2); // 6 - Mesmo do anterior
+int z = (2 + 2) * 2; // 8 - Executou a soma primeiro
+```

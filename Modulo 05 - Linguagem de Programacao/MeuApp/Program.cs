@@ -6,19 +6,26 @@ namespace MeuApp
     {
         static void Main(string[] args)
         {
-            int integer = 100;
-            float real = 25.8f;
+            char divisorCharacter = '-';
+            int divisorLength = 50;
 
-            // real = integer; // Conversão implícita
-            // integer = (int)real; // Conversão explícita
-            // string realValueInString = real.ToString(); // ToString
-            // integer = int.Parse("255"); // Parse
-            integer = Convert.ToInt32(real); // Convert
+            int sum = 25 + 22;
+            int subtraction = 25 - 22;
+            int multiplication = 25 * 22;
+            int division = 22 / 5;
 
-            // Console.WriteLine(realValueInString);
-            Console.WriteLine(integer);
-            Console.WriteLine(Convert.ToBoolean(0));
-            Console.WriteLine(Convert.ToBoolean(1));
+            int x = 2 + 2 * 2;
+            int y = (2 + 2) * 2;
+
+            Console.WriteLine($"Soma: {sum}");
+            Console.WriteLine($"Subtração: {subtraction}");
+            Console.WriteLine($"Multiplicação: {multiplication}");
+            Console.WriteLine($"Divisão: {division}");
+
+            Console.WriteLine(new string(divisorCharacter, divisorLength));
+
+            Console.WriteLine($"X: {x}");
+            Console.WriteLine($"Y: {y}");
         }
     }
 }
