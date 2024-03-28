@@ -458,3 +458,18 @@ int x = 2 + 2 * 2; // 6
 int y = 2 + (2 * 2); // 6 - Mesmo do anterior
 int z = (2 + 2) * 2; // 8 - Executou a soma primeiro
 ```
+
+## Operadores de Atribuição
+
+- Utilizamos o igual (`=`) para atribuir um valor
+- Porém, podemos utilizar o igual junto a um operador aritmético
+- `x += 5` é o mesmo que `x = x + 5`
+
+Exemplo:
+```cs
+int x = 0; // Atribuição
+x += 5; // x = x + 5
+x -= 1; // x = x - 1
+x *= 10; // x = x * 10
+x /= 2; // x = x / 2
+```
