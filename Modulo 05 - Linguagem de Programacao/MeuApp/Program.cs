@@ -24,6 +24,15 @@ namespace MeuApp
             multiplication *= 5;
             division /= 5;
 
+            // Comparison operators
+            bool comparisonResult;
+            comparisonResult = x == 0; // False
+            comparisonResult = x != 0; // True
+            comparisonResult = x > 0; // True
+            comparisonResult = x < 0; // False
+            comparisonResult = x >= 0; // True
+            comparisonResult = x <= 0; // False
+
             Console.WriteLine($"Soma: {sum}");
             Console.WriteLine($"Subtração: {subtraction}");
             Console.WriteLine($"Multiplicação: {multiplication}");
@@ -33,6 +42,8 @@ namespace MeuApp
 
             Console.WriteLine($"X: {x}");
             Console.WriteLine($"Y: {y}");
+
+            Console.WriteLine($"Resultado comparação: {comparisonResult}");
         }
     }
 }

@@ -473,3 +473,28 @@ x -= 1; // x = x - 1
 x *= 10; // x = x * 10
 x /= 2; // x = x / 2
 ```
+
+## Operadores de Comparação
+
+- Podemos comparar qualquer tipo de dado
+    - Números, strings, byte, ...
+- A comparação **SEMPRE** retorna verdadeiro ou false
+    - `True` ou `False`
+- Operações:
+    - Igual => `==`
+    - Diferente => `!=`
+    - Maior que => `>`
+    - Menor que => `<`
+    - Maior ou igual a => `>=`
+    - Menor ou igual que => `<=`
+
+Exemplo:
+```cs
+int x = 25;
+x == 0; // False
+x != 0; // True
+x > 0; // True
+x < 0; // False
+x >= 0; // True
+x <= 0; // False
+```
