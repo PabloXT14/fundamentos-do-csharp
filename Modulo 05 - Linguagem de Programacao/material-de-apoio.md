@@ -519,3 +519,59 @@ bool between = (x > 25) && (x < 40); // False
 bool or = (x > 25) || (x < 40); // True
 bool not = !(x < 25); // False
 ```
+
+## Estrutura Condicional: If e Else
+
+### If
+
+- Tradução: "SE", ou seja, "caso alguma condição seja atendida"
+- Utilizado para a tomada de decisões
+- Utiliza os operadores lógicos
+
+### Else
+
+- Complemento ao `if`
+- Caso a condição no `if` não seja atendida
+- Podemos ter também:
+    - `else if(condição)`
+    - Não tem limites (Mas cuidado)
+- Podemos ter apenas um `else` para executar algo caso a condição seja atendida
+
+### Exemplos
+
+Exemplo `if`:
+```cs
+if(condicao) { // Executa caso seja verdadeiro
+    ...
+}
+
+if(condicao) // Caso só haja uma linha, não precisa de chaves
+    ...
+``` 
+
+Exemplo `else`:
+```cs
+if(condicao) { // Executa caso seja verdadeiro
+    ...
+} else { // Executa caso seja falso
+    ...
+}
+
+if(condicao) // Caso só haja uma linha, não precisa de chaves
+    ...
+else // Caso só haja uma linha, não precisa de chaves
+    ...
+```
+
+Exemplo `else if`:
+```cs
+if(condicao) { // Executa caso seja verdadeiro
+    ...
+} else if(outraCondicao) { // Senão, testa outra condição 
+    ...
+} else if(outraCondicao) { // Senão, testa outra condição
+    ...
+} else { // Se não acontecer nenhuma das anteriores
+    ...
+}
+```

@@ -6,17 +6,24 @@ namespace MeuApp
     {
         static void Main(string[] args)
         {
-            // Logic operations
-            int x = 12;
+            // Conditional operator: if else
+            int age = 18;
+            int ageOfMajority = 21;
 
-            bool between = (x > 25) && (x < 40);
-            bool or = (x > 25) || (x < 40);
-            bool not = !(x < 25);
+            if (age < ageOfMajority)
+            {
+                Console.WriteLine("Criança/Adolescente");
+            }
+            else if (age >= ageOfMajority && age < 65)
+            {
+                Console.WriteLine("Adulto");
+            }
+            else
+            {
+                Console.WriteLine("Idoso");
+            }
 
-            Console.WriteLine($"* x: {x}");
-            Console.WriteLine($"* (x > 25) && (x < 40): {between}"); // False
-            Console.WriteLine($"* (x > 25) || (x < 40): {or}"); // True
-            Console.WriteLine($"* !(x < 25): {not}"); // False
+            Console.WriteLine("Finalizou o programa");
         }
     }
 }
