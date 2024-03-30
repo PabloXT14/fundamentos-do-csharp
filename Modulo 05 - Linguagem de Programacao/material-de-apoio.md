@@ -498,3 +498,24 @@ x < 0; // False
 x >= 0; // True
 x <= 0; // False
 ```
+
+## Operadores Lógicos
+
+- Usados para operações condicionais
+- Retorna **SEMPRE** verdadeiro ou falso
+- AND (E):
+    - Deve atender todas as condições para dar verdadeiro
+    - Símbolo => `&&`
+- OR (OU):
+    - Se atender pelo menos uma condição já retorna verdadeiro
+    - Símbolo => `||`
+- NOT (NEGAÇÃO):
+    - Símbolo => `!`
+
+Exemplo:
+```cs
+int x = 12;
+bool between = (x > 25) && (x < 40); // False
+bool or = (x > 25) || (x < 40); // True
+bool not = !(x < 25); // False
+```

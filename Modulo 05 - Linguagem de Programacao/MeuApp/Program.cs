@@ -6,44 +6,17 @@ namespace MeuApp
     {
         static void Main(string[] args)
         {
-            char divisorCharacter = '-';
-            int divisorLength = 50;
+            // Logic operations
+            int x = 12;
 
-            // Arithmetics operations
-            int sum = 25 + 22;
-            int subtraction = 25 - 22;
-            int multiplication = 25 * 22;
-            int division = 22 / 5;
+            bool between = (x > 25) && (x < 40);
+            bool or = (x > 25) || (x < 40);
+            bool not = !(x < 25);
 
-            int x = 2 + 2 * 2;
-            int y = (2 + 2) * 2;
-
-            // Assignment operations
-            sum += 5;
-            subtraction -= 5;
-            multiplication *= 5;
-            division /= 5;
-
-            // Comparison operators
-            bool comparisonResult;
-            comparisonResult = x == 0; // False
-            comparisonResult = x != 0; // True
-            comparisonResult = x > 0; // True
-            comparisonResult = x < 0; // False
-            comparisonResult = x >= 0; // True
-            comparisonResult = x <= 0; // False
-
-            Console.WriteLine($"Soma: {sum}");
-            Console.WriteLine($"Subtração: {subtraction}");
-            Console.WriteLine($"Multiplicação: {multiplication}");
-            Console.WriteLine($"Divisão: {division}");
-
-            Console.WriteLine(new string(divisorCharacter, divisorLength));
-
-            Console.WriteLine($"X: {x}");
-            Console.WriteLine($"Y: {y}");
-
-            Console.WriteLine($"Resultado comparação: {comparisonResult}");
+            Console.WriteLine($"* x: {x}");
+            Console.WriteLine($"* (x > 25) && (x < 40): {between}"); // False
+            Console.WriteLine($"* (x > 25) || (x < 40): {or}"); // True
+            Console.WriteLine($"* !(x < 25): {not}"); // False
         }
     }
 }
