@@ -6,24 +6,25 @@ namespace MeuApp
     {
         static void Main(string[] args)
         {
-            // Conditional operator: if else
-            int age = 18;
-            int ageOfMajority = 21;
+            // Conditional operator: switch
+            string weekDay = DateTime.Now.DayOfWeek.ToString();
+            // weekDay = "Saturday";
 
-            if (age < ageOfMajority)
+            switch (weekDay)
             {
-                Console.WriteLine("Criança/Adolescente");
+                case "Tuesday":
+                    Console.WriteLine("Hoje é Terça, dia de programação");
+                    break;
+                case "Thursday":
+                    Console.WriteLine("Hoje é Quinta, dia de exercício");
+                    break;
+                case "Saturday":
+                    Console.WriteLine("Hoje é Sábado, dia de descanso");
+                    break;
+                default:
+                    Console.WriteLine("Hoje é um dia normal");
+                    break;
             }
-            else if (age >= ageOfMajority && age < 65)
-            {
-                Console.WriteLine("Adulto");
-            }
-            else
-            {
-                Console.WriteLine("Idoso");
-            }
-
-            Console.WriteLine("Finalizou o programa");
         }
     }
 }

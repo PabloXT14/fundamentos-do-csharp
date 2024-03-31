@@ -575,3 +575,22 @@ if(condicao) { // Executa caso seja verdadeiro
     ...
 }
 ```
+
+## Estrutura Condicional: Switch
+
+- Utilizado quando temos muitas decisões
+- Executado em cascata
+- Devemos parar manualmente a execução com o comando `break`
+- Possui uma execução padrão chamada `default`
+
+Exemplo:
+```cs
+int value = 1;
+switch(value)
+{
+    case 1: Console.WriteLine("1"); break;
+    case 2: Console.WriteLine("2"); break;
+    case 3: Console.WriteLine("3"); break;
+    default: Console.WriteLine("4"); break; // Se não for 1, 2 ou 3
+}
+```
