@@ -594,3 +594,48 @@ switch(value)
     default: Console.WriteLine("4"); break; // Se não for 1, 2 ou 3
 }
 ```
+
+## Laços de Repetição: For
+
+- Um **laço de repetição** consiste em executar uma determinada ação várias vezes
+- Neste tópico vamos abordar o laço de repetição `for` (definido por essa mesma palavra-chave)
+- Tradução de `for` é "para", ou seja, para cada item em um valor...
+- Exige 3 parâmetros:
+    - `Contador`
+    - `Condição`
+    - `Incremento`
+
+Exemplo de sintaxe:
+```cs
+for (var i = 0; i <= 5; i++)
+{
+    // Condição que irá executar para cada item
+}
+```
+
+Exemplos de utilização:
+```cs
+// Conta de 0 a 5
+for (var i = 0; i <= 5; i++)
+{
+    Console.WriteLine(i);
+}
+
+// Conta de 1 a 5
+for (var i = 1; i <= 5; i++)
+{
+    Console.WriteLine(i);
+}
+
+// Conta de 0 a 4
+for (var i = 0; i < 5; i++)
+{
+    Console.WriteLine(i);
+}
+
+// Conta de 5 a 0
+for (var i = 5; i >= 0; i--)
+{
+    Console.WriteLine(i);
+}
+```

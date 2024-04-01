@@ -6,24 +6,34 @@ namespace MeuApp
     {
         static void Main(string[] args)
         {
-            // Conditional operator: switch
-            string weekDay = DateTime.Now.DayOfWeek.ToString();
-            // weekDay = "Saturday";
+            // Repetition Statement: For
 
-            switch (weekDay)
+            // Conta de 0 a 5
+            Console.WriteLine("Contando de 0 a 5");
+            for (int i = 0; i <= 5; i++)
             {
-                case "Tuesday":
-                    Console.WriteLine("Hoje é Terça, dia de programação");
-                    break;
-                case "Thursday":
-                    Console.WriteLine("Hoje é Quinta, dia de exercício");
-                    break;
-                case "Saturday":
-                    Console.WriteLine("Hoje é Sábado, dia de descanso");
-                    break;
-                default:
-                    Console.WriteLine("Hoje é um dia normal");
-                    break;
+                Console.WriteLine(i);
+            }
+
+            // Conta de 1 a 5
+            Console.WriteLine("\nContando de 1 a 5");
+            for (int i = 1; i <= 5; i++)
+            {
+                Console.WriteLine(i);
+            }
+
+            // Conta de 0 a 4
+            Console.WriteLine("\nContando de 0 a 4");
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine(i);
+            }
+
+            // Contando de 5 a 0
+            Console.WriteLine("\nContando de 5 a 0");
+            for (int i = 5; i >= 0; i--)
+            {
+                Console.WriteLine(i);
             }
         }
     }
