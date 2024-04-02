@@ -677,3 +677,22 @@ while (true)
     Console.WriteLine(value);
 }
 ```
+
+## Laços de Repetição: Do/While
+
+- Definido pela palavra-chave `do/while`
+- Tradução: "Faça", ou seja, realiza uma ação enquanto...
+- Exige apenas uma condição no `while`
+- Checa a condição **DEPOIS** de executar pelo menos uma vez
+
+Exemplo:
+```cs
+var value = 0;
+
+// Conta de 0 a 5
+do
+{
+    Console.WriteLine(value);
+    value++;
+} while (value <= 5);
+```
