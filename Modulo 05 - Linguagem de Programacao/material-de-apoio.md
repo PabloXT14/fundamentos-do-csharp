@@ -696,3 +696,48 @@ do
     value++;
 } while (value <= 5);
 ```
+
+## Funções ou Métodos
+
+- Podemos segmentar nosso programa em funções
+- Também conhecidos como métodos
+- O `main` é um exemplo de método
+- Possui um `retorno`, um `nome` e `parâmetros`
+- Esta composição é chamada de assinatura
+- Padronização de nomenclatura: Começam sempre com maiúsculas
+
+Exemplo 1:
+```cs
+static void Main(string[] args)
+{
+    // Invocação do método
+    MeuMetodo("C# é legal!");
+}
+
+// Definição do método
+static void MeuMetodo(string parametro)
+{
+    Console.WriteLine(parametro);
+}
+```
+
+Exemplo 2:
+```cs
+static void Main(string[] args)
+{
+    // Invocando método
+    // Armazenando o valor em uma variável
+    var nome = RetornaNome("John", "Doe");
+
+    // Imprime o nome na tela
+    Console.WriteLine(nome);
+}
+
+// Definição de método
+// Retorna uma string e recebe vários parâmetros
+static string RetornaNome(string nome, string sobrenome)
+{
+    // Retorna o nome e sobrenome
+    return $"{nome} {sobrenome}";
+}
+```

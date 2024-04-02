@@ -4,18 +4,24 @@ namespace MeuApp
 {
     class Program
     {
+        // Functions or Methods
+
         static void Main(string[] args)
         {
-            // Repetition Statement: Do/While
-            int value = 0;
+            var name = ReturnName("John", "Doe");
 
-            // Conta de 0 a 5
-            Console.WriteLine("Contando de 0 a 5:");
-            do
-            {
-                Console.WriteLine(value);
-                value++;
-            } while (value <= 5);
+            Greeting();
+            Console.WriteLine(name);
+        }
+
+        static void Greeting()
+        {
+            Console.WriteLine("Hello World!");
+        }
+
+        static string ReturnName(string firstName, string lastName, int age = 18)
+        {
+            return $"{firstName} {lastName} ({age} years old)";
         }
     }
 }
