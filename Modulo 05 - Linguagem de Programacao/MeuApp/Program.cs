@@ -6,35 +6,31 @@ namespace MeuApp
     {
         static void Main(string[] args)
         {
-            // Repetition Statement: For
+            // Repetition Statement: While
+            int value = 0;
 
-            // Conta de 0 a 5
-            Console.WriteLine("Contando de 0 a 5");
-            for (int i = 0; i <= 5; i++)
+            Console.WriteLine("Conta de 0 a 5");
+            while (value <= 5)
             {
-                Console.WriteLine(i);
+                Console.WriteLine(value);
+                value++;
             }
 
-            // Conta de 1 a 5
-            Console.WriteLine("\nContando de 1 a 5");
-            for (int i = 1; i <= 5; i++)
+            value = 0;
+            Console.WriteLine("\nConta de 1 a 6");
+            while (value <= 5)
             {
-                Console.WriteLine(i);
+                value++;
+                Console.WriteLine(value);
             }
 
-            // Conta de 0 a 4
-            Console.WriteLine("\nContando de 0 a 4");
-            for (int i = 0; i < 5; i++)
-            {
-                Console.WriteLine(i);
-            }
-
-            // Contando de 5 a 0
-            Console.WriteLine("\nContando de 5 a 0");
-            for (int i = 5; i >= 0; i--)
-            {
-                Console.WriteLine(i);
-            }
+            // Loop Infinito
+            // value = 0;
+            // while (true)
+            // {
+            //     Console.WriteLine(value);
+            //     value++;
+            // }
         }
     }
 }

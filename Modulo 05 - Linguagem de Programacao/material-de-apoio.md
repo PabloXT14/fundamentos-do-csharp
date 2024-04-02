@@ -639,3 +639,41 @@ for (var i = 5; i >= 0; i--)
     Console.WriteLine(i);
 }
 ```
+
+## Laços de Repetição: While
+
+- Definido pela palavra-chave `while`
+- Tradução: "Enquanto"(while), ou seja, enquanto uma condição for verdadeira...
+- Exige apenas uma condição
+- Checa a condição **ANTES** de executar
+- **Atenção:** preste atenção à condição, pois pode cair em um loop infinito
+
+Exemplos:
+```cs
+var value = 0;
+
+// Conta de 0 a 5
+// Exibe de 0 a 5 na tela
+while (value <= 5)
+{
+    Console.WriteLine(value);
+    value++;
+}
+
+// Conta de 0 a 5
+// Exibe de 1 a 6 na tela
+value = 0;
+while (value <= 5)
+{
+    value++;
+    Console.WriteLine(value);
+}
+
+// Loop Infinito
+value = 0;
+while (true)
+{
+    valor++;
+    Console.WriteLine(value);
+}
+```
