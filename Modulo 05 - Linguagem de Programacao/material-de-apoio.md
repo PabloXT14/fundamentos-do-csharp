@@ -741,3 +741,70 @@ static string RetornaNome(string nome, string sobrenome)
     return $"{nome} {sobrenome}";
 }
 ```
+
+## Value Types & Reference Types
+
+### Heap e Stack
+
+- A memória é dividida em duas partes,  `Heap`(monte) e `Stack`(pilha)
+- `Heap` armazena os dados
+- `Stack` armazena as referências para os dados
+
+### Value Types
+
+- Qualquer tipo no .NET é tratado como:
+    - Tipo de Referência (`Reference Type`)
+    - Tipo de Valor (`Value Type`)
+- Tipos de valor armazenam dados
+- São armazenados em um local da memória chamada `Stack`
+- Quando armazenamos um valor, a memória é alocada
+- Este espaço armazena o dado criado
+- Nossa variável acessa esta dado diretamente
+- Se assimilarmos uma variável do tipo de valor (`Value Types`) a outra:
+    - O valor será **COPIADO**
+    - Ambas serão independentes
+- Exemplos de `Value Types`: `Built-in`, `Structs`, `Enums`
+- O `Garbage Collector` não acessa a `Stack`
+
+> Garbage Collector(Coletor de lixL): ferramenta de uma linguagem de programação para desalocar da memória valores/dados que não estão sendo mais utilizados. São importantes para otimizar a nossa aplicação, deixando-a mais performática.
+
+Exemplo:
+```cs
+// Exemplos de Value Types
+int x = 25;
+int y = x; // Y é uma cópia de X (mas tem um lugar independente para sí na memória)
+Console.WriteLine(x); // 25
+Console.WriteLine(y); // 25
+x = 32; // Somente X foi alterado
+Console.WriteLine(x); // 32
+Console.WriteLine(y); // 25
+```
+
+### Reference Types
+
+- Armazenam o endereço do objeto que contém os dados
+- Não armazena os dados em si
+- São armazenados em um local da memória chamado `Heap`(monte)
+- Ao assimilar um variável:
+    - Criará uma **referência**
+    - Aponta para a mesma informação (mesmo local na memória)
+    - Não são independentes
+- Quando não mais utilizados são marcados para exclusão
+- `Garbage Collector` passa removendo todos eles
+- Exemplos de `Reference Types`: `Classes`, `Objects`, `Arrays`, ...
+
+Exemplo:
+```cs
+var arr = new string[2];
+
+arr[0] = "Item 1";
+var arr2 = arr; // Não cria uma cópia
+
+Console.WriteLine(arr[0]); // Item 1
+Console.WriteLine(arr2[0]); // Item 1
+
+// Altera as duas listas
+arr[0] = "Item alterado";
+Console.WriteLine(arr[0]); // Item alterado
+Console.WriteLine(arr2[0]); // Item alterado 
+```

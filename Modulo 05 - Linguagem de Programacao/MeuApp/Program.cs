@@ -4,24 +4,44 @@ namespace MeuApp
 {
     class Program
     {
-        // Functions or Methods
-
         static void Main(string[] args)
         {
-            var name = ReturnName("John", "Doe");
+            // Value Types
+            int x = 25;
+            int y = x;
 
-            Greeting();
-            Console.WriteLine(name);
-        }
+            Console.WriteLine("Valores iniciais:");
+            Console.WriteLine($"X: {x}");
+            Console.WriteLine($"Y: {y}");
 
-        static void Greeting()
-        {
-            Console.WriteLine("Hello World!");
-        }
+            x = 32;
 
-        static string ReturnName(string firstName, string lastName, int age = 18)
-        {
-            return $"{firstName} {lastName} ({age} years old)";
+            Console.WriteLine(new string('-', 70));
+
+            Console.WriteLine("Valores alterados:");
+            Console.WriteLine($"X: {x}");
+            Console.WriteLine($"Y: {y}");
+
+            Console.WriteLine(new string('-', 70));
+
+            // Reference Types
+            var arr = new string[2];
+            arr[0] = "Item 1";
+
+            var arr2 = arr;
+
+
+            Console.WriteLine("Valores iniciais:");
+            Console.WriteLine($"Item 1 (arr): {arr[0]}");
+            Console.WriteLine($"Item 1 (arr2): {arr2[0]}");
+
+            arr[0] = "Item alterado";
+
+            Console.WriteLine(new string('-', 70));
+
+            Console.WriteLine("Valores alterados:");
+            Console.WriteLine($"Item 1 (arr): {arr[0]}");
+            Console.WriteLine($"Item 1 (arr2): {arr2[0]}");
         }
     }
 }
