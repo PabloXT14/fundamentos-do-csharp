@@ -6,42 +6,31 @@ namespace MeuApp
     {
         static void Main(string[] args)
         {
-            // Value Types
-            int x = 25;
-            int y = x;
+            var product = new Product(1, "Mouse Gamer", 197.99);
 
-            Console.WriteLine("Valores iniciais:");
-            Console.WriteLine($"X: {x}");
-            Console.WriteLine($"Y: {y}");
+            Console.WriteLine(product.Id);
+            Console.WriteLine(product.Title);
+            Console.WriteLine(product.Price);
+            Console.WriteLine(product.PriceInDollar(5.70));
+        }
+    }
 
-            x = 32;
+    struct Product
+    {
+        public int Id;
+        public string Title;
+        public double Price;
 
-            Console.WriteLine(new string('-', 70));
+        public Product(int id, string title, double price)
+        {
+            Id = id;
+            Title = title;
+            Price = price;
+        }
 
-            Console.WriteLine("Valores alterados:");
-            Console.WriteLine($"X: {x}");
-            Console.WriteLine($"Y: {y}");
-
-            Console.WriteLine(new string('-', 70));
-
-            // Reference Types
-            var arr = new string[2];
-            arr[0] = "Item 1";
-
-            var arr2 = arr;
-
-
-            Console.WriteLine("Valores iniciais:");
-            Console.WriteLine($"Item 1 (arr): {arr[0]}");
-            Console.WriteLine($"Item 1 (arr2): {arr2[0]}");
-
-            arr[0] = "Item alterado";
-
-            Console.WriteLine(new string('-', 70));
-
-            Console.WriteLine("Valores alterados:");
-            Console.WriteLine($"Item 1 (arr): {arr[0]}");
-            Console.WriteLine($"Item 1 (arr2): {arr2[0]}");
+        public double PriceInDollar(double dollar)
+        {
+            return Price * dollar;
         }
     }
 }

@@ -808,3 +808,97 @@ arr[0] = "Item alterado";
 Console.WriteLine(arr[0]); // Item alterado
 Console.WriteLine(arr2[0]); // Item alterado 
 ```
+
+## Structs
+
+- Tipos de dado estruturado
+- Apenas a estrutura ou esqueleto
+- Tipo de valor
+- Armazenam apenas outros tipos de dados
+- Definido pela palavra-chave `struct`
+- Composto de propriedades e métodos
+- Nome sempre com maiúsculo
+    - O mesmo para propriedades e métodos
+- Criado a partir da palavra `new`
+    - Neste momento sim temos os valores
+
+- A anatomia de uma estrutura(`struct`) normalmente é:
+```cs
+struct Product
+{
+    // Propriedades
+
+    // Métodos
+}
+```
+
+- Anatomia de uma propriedade:
+```cs
+struct Product
+{
+    // Propriedades
+    public int Id;
+
+    // Métodos
+}
+```
+
+- Anatomia de um método:
+```cs
+struct Product
+{
+    // Propriedades
+    public int Id;
+    public float Price;
+
+    // Métodos
+    public float PriceInDollar(float dollar)
+    {
+        return Price * dollar;
+    }
+}
+```
+
+- Para criar uma estrutura:
+```cs
+static void Main(string[] args)
+{
+    // Cria uma estrutura
+    var product = new Product();
+}
+```
+
+- Vem com dados dos tipos padrão
+- Para preencher os dados
+```cs
+var product  = new Product();
+product.Id = 1;
+product.Title = "Mouse Gamer";
+product.Price = 197.99f;
+Console.WriteLine(product.Id);
+Console.WriteLine(product.Title);
+Console.WriteLine(product.Price);
+```
+
+- Método construtor é um método com o mesmo nome da struct, sempre chamado quando se realiza a criação de uma instância da struct
+- Não possui retorno
+```cs
+struct Product
+{
+    public Product(int id, string title, float price)
+    {
+        Id = id;
+        Title = title;
+        Price = price;
+    }
+}
+```
+
+- Eles facilitam a criação de estruturas
+```cs
+var product = new Product(1, "Mouse Gamer", 197.99f);
+Console.WriteLine(product.Id);
+Console.WriteLine(product.Title);
+Console.WriteLine(product.Price);
+Console.WriteLine(product.PriceInDollar(5.70f));
+```
