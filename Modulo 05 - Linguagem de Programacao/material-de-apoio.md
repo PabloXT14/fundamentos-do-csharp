@@ -902,3 +902,46 @@ Console.WriteLine(product.Title);
 Console.WriteLine(product.Price);
 Console.WriteLine(product.PriceInDollar(5.70f));
 ```
+
+## Enums (Enumeradores)
+
+- Usado para fornecer uma melhor visualização do código
+- Substitui o uso de inteiros
+- Usados em listas curtas
+- Usados em dados fixos
+    - `Hard Coded`
+- Convenção da comunidade: sempre em Maiúsculo
+    - Começar com a letra `E`
+
+- Anatomia de um enumerador(`enum`)
+```cs
+enum EEstadoCivil
+{
+    // Enumeradores
+    Solteiro = 1,
+    Casado = 2,
+    Divorciado = 3
+}
+```
+
+- Uso de um enumerador
+```cs
+struct Client
+{
+    public string Nome;
+    public EEstadoCivil EstadoCivil;
+}
+
+// Sem enumeradores
+// var cliente = new Cliente("João Silva", 1);
+
+// Com enumerador
+var cliente = new Cliente("João Silva", EEstadoCivil.Solteiro);
+```
+
+- Exibindo dados de um enumerador
+```cs
+Console.WriteLine(cliente.Nome); // João Silva
+Console.WriteLine(cliente.EstadoCivil); // Escreve Solteiro
+Console.WriteLine((int)cliente.EstadoCivil); // Escreve 1 
+```
