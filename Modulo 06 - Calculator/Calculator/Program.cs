@@ -10,18 +10,11 @@ namespace Calculator
 
             Console.WriteLine(new string('-', 70));
 
-
             Console.WriteLine(CentralizeText("CALCULADORA", 70));
 
             Console.WriteLine(new string('-', 70));
 
-            Console.Write("Digite o primeiro valor: ");
-
-            double value1 = double.Parse(Console.ReadLine());
-
-            Console.WriteLine(new string('-', 70));
-
-            Console.WriteLine($"Valor digitado: {value1}");
+            Sum();
         }
 
         static string CentralizeText(string text, int lineWidth)
@@ -32,6 +25,21 @@ namespace Calculator
             string centralizedLine = text.PadLeft(spaceBefore + text.Length).PadRight(spaceAfter);
 
             return centralizedLine;
+        }
+
+        static void Sum()
+        {
+            Console.Write("Digite o primeiro valor: ");
+            float value1 = float.Parse(Console.ReadLine());
+
+            Console.Write("Digite o segundo valor: ");
+            float value2 = float.Parse(Console.ReadLine());
+
+            Console.WriteLine(new string('-', 70));
+
+            float result = value1 + value2;
+
+            Console.WriteLine($"Resultado da soma: \x1b[33m{result}\x1b[0m");
         }
     }
 }
