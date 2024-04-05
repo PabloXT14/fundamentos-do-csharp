@@ -10,7 +10,8 @@ namespace Calculator
 
             Console.WriteLine(new string('-', 70));
 
-            Console.WriteLine("Calculator");
+
+            Console.WriteLine(CentralizeText("CALCULADORA", 70));
 
             Console.WriteLine(new string('-', 70));
 
@@ -21,6 +22,16 @@ namespace Calculator
             Console.WriteLine(new string('-', 70));
 
             Console.WriteLine($"Valor digitado: {value1}");
+        }
+
+        static string CentralizeText(string text, int lineWidth)
+        {
+            int spaceBefore = (lineWidth - text.Length) / 2;
+            int spaceAfter = lineWidth - text.Length - spaceBefore;
+
+            string centralizedLine = text.PadLeft(spaceBefore + text.Length).PadRight(spaceAfter);
+
+            return centralizedLine;
         }
     }
 }
