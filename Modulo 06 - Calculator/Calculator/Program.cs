@@ -16,10 +16,7 @@ namespace Calculator
 
             Console.WriteLine(new string('-', lineWidth));
 
-            // Sum();
-            // Subtraction();
-            // Division();
-            Multiplication();
+            Menu();
         }
 
         static string CentralizeText(string text, int lineWidth)
@@ -30,6 +27,36 @@ namespace Calculator
             string centralizedLine = text.PadLeft(spaceBefore + text.Length).PadRight(spaceAfter);
 
             return centralizedLine;
+        }
+
+        static void Menu()
+        {
+            Console.Clear();
+
+            Console.WriteLine("O que deseja fazer?");
+            Console.WriteLine("1 - Somar");
+            Console.WriteLine("2 - Subtrair");
+            Console.WriteLine("3 - Multiplicar");
+            Console.WriteLine("4 - Dividir");
+
+            Console.WriteLine(new string('-', lineWidth));
+
+            Console.Write("Selecione uma opção: ");
+
+            short option = short.Parse(Console.ReadLine());
+
+            Console.Clear();
+
+            switch (option)
+            {
+                case 1: Sum(); break;
+                case 2: Subtraction(); break;
+                case 3: Multiplication(); break;
+                case 4: Division(); break;
+                default: Menu(); break;
+            }
+
+            Menu();
         }
 
         static void Sum()
