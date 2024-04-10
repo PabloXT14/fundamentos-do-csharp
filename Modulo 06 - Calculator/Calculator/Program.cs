@@ -38,6 +38,7 @@ namespace Calculator
             Console.WriteLine("2 - Subtrair");
             Console.WriteLine("3 - Multiplicar");
             Console.WriteLine("4 - Dividir");
+            Console.WriteLine("5 - Sair");
 
             Console.WriteLine(new string('-', lineWidth));
 
@@ -53,6 +54,7 @@ namespace Calculator
                 case 2: Subtraction(); break;
                 case 3: Multiplication(); break;
                 case 4: Division(); break;
+                case 5: System.Environment.Exit(0); break;
                 default: Menu(); break;
             }
 
