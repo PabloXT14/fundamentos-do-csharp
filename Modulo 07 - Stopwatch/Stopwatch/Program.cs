@@ -1,10 +1,27 @@
-﻿static void Start()
-{
-    int time = 10;
-    int currentTime = 0;
+﻿using System;
+using System.Threading;
 
-    while (currentTime != time)
+namespace Stopwatch
+{
+    class Program
     {
-        currentTime++;
+        private static void Main(string[] args)
+        {
+            Start();
+        }
+
+        static void Start()
+        {
+            int time = 10;
+            int currentTime = 0;
+
+            while (currentTime != time)
+            {
+                Console.Clear();
+                currentTime++;
+                Console.WriteLine(currentTime);
+                Thread.Sleep(1000); // delay for 1 second 
+            }
+        }
     }
 }
