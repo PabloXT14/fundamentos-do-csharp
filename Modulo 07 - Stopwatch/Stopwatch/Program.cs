@@ -14,6 +14,8 @@ namespace Stopwatch
 
         static void Menu()
         {
+            Console.Clear();
+
             Console.WriteLine("Especifique o tempo e a unidade de tempo para contagem:");
             Console.WriteLine("Segundos (ex: 10s = 10 segundo)");
             Console.WriteLine("Minutos (ex: 1m = 1 minuto)");
@@ -24,13 +26,18 @@ namespace Stopwatch
             Console.Write("Opção: ");
             string data = Console.ReadLine().ToLowerInvariant();
 
+            if (data == "0")
+                System.Environment.Exit(0);
+
             char type = char.Parse(data.Substring(data.Length - 1, 1));
             int time = int.Parse(data.Substring(0, data.Length - 1));
+            int multiplier = type == 'm' ? 60 : 1;
 
             Console.WriteLine(new string('-', lineWidth));
 
-            Console.WriteLine($"Type: {type}");
-            Console.WriteLine($"Time: {time}");
+            Start(time * multiplier);
+
+            Menu();
         }
 
         static void Start(int timeInSeconds)
@@ -47,7 +54,7 @@ namespace Stopwatch
 
             Console.Clear();
             Console.WriteLine("Stopwatch finalizado");
-            Thread.Sleep(2500);
+            Thread.Sleep(1000);
         }
     }
 }
