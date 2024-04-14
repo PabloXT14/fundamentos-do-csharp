@@ -4,6 +4,8 @@ namespace TextEditor
 {
     class Program
     {
+        static int lineWidth = 70;
+
         static void Main(string[] args)
         {
             Menu();
@@ -34,7 +36,19 @@ namespace TextEditor
 
         static void New()
         {
+            Console.Clear();
 
+            Console.WriteLine("Digite o seu texto abaixo (ESC para sair)");
+            Console.WriteLine(new string('-', lineWidth));
+
+            string text = "";
+
+            while (Console.ReadKey().Key != ConsoleKey.Escape)
+            {
+                text += Console.ReadLine();
+            }
+
+            Console.WriteLine(text);
         }
     }
 }
