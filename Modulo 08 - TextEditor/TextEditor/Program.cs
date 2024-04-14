@@ -43,10 +43,16 @@ namespace TextEditor
 
             string text = "";
 
-            while (Console.ReadKey().Key != ConsoleKey.Escape)
+            do
             {
                 text += Console.ReadLine();
+                text += Environment.NewLine;
             }
+            while (Console.ReadKey().Key != ConsoleKey.Escape);
+
+            Console.WriteLine(new string('-', lineWidth));
+
+            Console.WriteLine("O texto digitado foi: ");
 
             Console.WriteLine(text);
         }
