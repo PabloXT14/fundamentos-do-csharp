@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 
 namespace TextEditor
 {
@@ -55,6 +56,21 @@ namespace TextEditor
             Console.WriteLine("O texto digitado foi: ");
 
             Console.WriteLine(text);
+        }
+
+        static void Save(string text)
+        {
+            Console.Clear();
+
+            Console.WriteLine("Qual caminho para salvar o arquivo?");
+
+            var path = Console.ReadLine();
+
+            // using => abre e fecha de forma automática o que for passado como parâmetro
+            using (var file = new StreamWriter(path))
+            {
+                file.Write(text);
+            }
         }
     }
 }
