@@ -55,7 +55,9 @@ namespace TextEditor
 
             Console.WriteLine("O texto digitado foi: ");
 
-            Console.WriteLine(text);
+            Save(text);
+
+            Menu();
         }
 
         static void Save(string text)
@@ -71,6 +73,10 @@ namespace TextEditor
             {
                 file.Write(text);
             }
+
+            Console.WriteLine($"Arquivo {path} salvo com sucesso!");
+
+            Console.ReadLine();
         }
     }
 }
