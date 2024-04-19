@@ -4,9 +4,11 @@ namespace MyApp
 {
     class Program
     {
+        static int lineWidth = 70;
+
         static void Main(string[] args)
         {
-            AulaStringInterpolation();
+            AulaStringComparison();
         }
 
         static void AulaGuid()
@@ -45,6 +47,24 @@ namespace MyApp
             R$ {price * 0.9} apenas na promoção (sem promoção é R$ {price})";
 
             Console.WriteLine(text4);
+        }
+
+        static void AulaStringComparison()
+        {
+            var text = "Hello, World!";
+
+            Console.WriteLine(text.CompareTo("Hello, World!")); // 0
+
+            Console.WriteLine(text.CompareTo("hello, World!")); // 1
+
+            Console.WriteLine(text.CompareTo("Random Text")); // -1
+
+            Console.WriteLine(new string('-', lineWidth));
+
+            Console.WriteLine(text.Contains("World")); // true
+            Console.WriteLine(text.Contains("world")); // false
+            Console.WriteLine(text.Contains("world", StringComparison.OrdinalIgnoreCase)); // true
+            Console.WriteLine(text.Contains(null)); // Erro
         }
     }
 }
