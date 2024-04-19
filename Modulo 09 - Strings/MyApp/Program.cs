@@ -6,7 +6,12 @@ namespace MyApp
     {
         static void Main(string[] args)
         {
-            // Guid (Global Unique Identifier - Identificador Unico Global) já vem por padrão no System
+            AulaStringInterpolation();
+        }
+
+        static void AulaGuid()
+        {
+            // Guid (Global Unique Identifier - Identificador Único Global) já vem por padrão no System
 
             var id = Guid.NewGuid();
 
@@ -22,6 +27,24 @@ namespace MyApp
 
             Console.WriteLine($"id: {id}");
             Console.WriteLine($"id cortado: {id.ToString().Substring(0, 8)}");
+        }
+
+        static void AulaStringInterpolation()
+        {
+            var price = 10.2;
+            var text1 = "O preço do produto é R$ " + price + " apenas na promoção";
+            var text2 = string.Format(
+                "O preço do produto é R$ {0} apenas na promoção (sem promoção é R$ {1})",
+                price * 0.9,
+                price
+            );
+            var text3 = $"O preço do produto é R$ {price} apenas na promoção";
+
+            // O @ permite quebras de linha e caracteres especiais sejam usados
+            var text4 = $@"O preço do produto é
+            R$ {price * 0.9} apenas na promoção (sem promoção é R$ {price})";
+
+            Console.WriteLine(text4);
         }
     }
 }
