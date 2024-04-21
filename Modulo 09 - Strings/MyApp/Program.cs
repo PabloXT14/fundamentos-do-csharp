@@ -8,10 +8,10 @@ namespace MyApp
 
         static void Main(string[] args)
         {
-            AulaStardWithEndsWith();
+            StartsWithAndEndsWith();
         }
 
-        static void AulaGuid()
+        static void GenerateGuid()
         {
             // Guid (Global Unique Identifier - Identificador Único Global) já vem por padrão no System
 
@@ -31,7 +31,7 @@ namespace MyApp
             Console.WriteLine($"id cortado: {id.ToString().Substring(0, 8)}");
         }
 
-        static void AulaStringInterpolation()
+        static void StringInterpolation()
         {
             var price = 10.2;
             var text1 = "O preço do produto é R$ " + price + " apenas na promoção";
@@ -49,7 +49,7 @@ namespace MyApp
             Console.WriteLine(text4);
         }
 
-        static void AulaStringComparison()
+        static void ComparingStrings()
         {
             var text = "Hello, World!";
 
@@ -67,7 +67,7 @@ namespace MyApp
             Console.WriteLine(text.Contains(null)); // Erro
         }
 
-        static void AulaStardWithEndsWith()
+        static void StartsWithAndEndsWith()
         {
             string text = "Hello, World!";
 
