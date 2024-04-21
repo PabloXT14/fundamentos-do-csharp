@@ -8,7 +8,7 @@ namespace MyApp
 
         static void Main(string[] args)
         {
-            StartsWithAndEndsWith();
+            EqualsComparison();
         }
 
         static void GenerateGuid()
@@ -82,6 +82,22 @@ namespace MyApp
             Console.WriteLine(text.EndsWith("world!")); // false
             Console.WriteLine(text.EndsWith("world!", StringComparison.OrdinalIgnoreCase)); // true
             Console.WriteLine(text.EndsWith("Radom text")); // false 
+        }
+
+        static void EqualsComparison()
+        {
+            string text = "Hello, World!";
+            int number = 10;
+
+            // Equals: neste caso o conteúdo comparado precisa ser exatamente igual para retornar true (disponível para qualquer tipo de objeto em C#)
+            Console.WriteLine(text.Equals("Hello, World!")); // true
+            Console.WriteLine(text.Equals("hello, World!")); // false
+            Console.WriteLine(text.Equals("hello, world!", StringComparison.OrdinalIgnoreCase)); // true
+
+            Console.WriteLine(new string('-', lineWidth));
+
+            Console.WriteLine(number.Equals(10)); // true
+            Console.WriteLine(number.Equals(11)); // false
         }
     }
 }
