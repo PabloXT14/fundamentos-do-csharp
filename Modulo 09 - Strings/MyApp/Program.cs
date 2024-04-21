@@ -8,7 +8,7 @@ namespace MyApp
 
         static void Main(string[] args)
         {
-            AulaStringComparison();
+            AulaStardWithEndsWith();
         }
 
         static void AulaGuid()
@@ -65,6 +65,23 @@ namespace MyApp
             Console.WriteLine(text.Contains("world")); // false
             Console.WriteLine(text.Contains("world", StringComparison.OrdinalIgnoreCase)); // true
             Console.WriteLine(text.Contains(null)); // Erro
+        }
+
+        static void AulaStardWithEndsWith()
+        {
+            string text = "Hello, World!";
+
+            Console.WriteLine(text.StartsWith("Hello")); // true
+            Console.WriteLine(text.StartsWith("hello")); // false
+            Console.WriteLine(text.StartsWith("hello", StringComparison.OrdinalIgnoreCase)); // true
+            Console.WriteLine(text.StartsWith("Radom text")); // false
+
+            Console.WriteLine(new string('-', lineWidth));
+
+            Console.WriteLine(text.EndsWith("World!")); // true
+            Console.WriteLine(text.EndsWith("world!")); // false
+            Console.WriteLine(text.EndsWith("world!", StringComparison.OrdinalIgnoreCase)); // true
+            Console.WriteLine(text.EndsWith("Radom text")); // false 
         }
     }
 }
