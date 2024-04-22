@@ -8,7 +8,7 @@ namespace MyApp
 
         static void Main(string[] args)
         {
-            AdditionalMethods();
+            HandlingStrings();
         }
 
         static void GenerateGuid()
@@ -118,6 +118,25 @@ namespace MyApp
             Console.WriteLine(text.Insert(6, " to an awesome")); // Hello, to an awesome World!
             Console.WriteLine(text.Remove(5, 8)); // Hello
             Console.WriteLine(text.Length); // 13
+        }
+
+        static void HandlingStrings()
+        {
+            var text = "Hello, World!";
+            var text2 = "I have a dream";
+            var text3 = "     Think different     ";
+
+            Console.WriteLine(text.Replace("Hello", "Hi")); // Hi, World!
+
+            var words = text2.Split(" ");
+            Console.WriteLine(words[0]); // I
+            Console.WriteLine(words[1]); // have
+
+            var initialWord = text.Substring(0, 5);
+            Console.WriteLine(initialWord); // Hello
+
+            Console.WriteLine(text3);
+            Console.WriteLine(text3.Trim()); // Think different
         }
     }
 }
