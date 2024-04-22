@@ -8,7 +8,7 @@ namespace MyApp
 
         static void Main(string[] args)
         {
-            Indexes();
+            AdditionalMethods();
         }
 
         static void GenerateGuid()
@@ -107,6 +107,17 @@ namespace MyApp
             Console.WriteLine(text[0]); // H
             Console.WriteLine(text.IndexOf("o")); // 4
             Console.WriteLine(text.LastIndexOf("o")); // 8
+        }
+
+        static void AdditionalMethods()
+        {
+            string text = "Hello, World!";
+
+            Console.WriteLine(text.ToUpper()); // HELLO, WORLD!
+            Console.WriteLine(text.ToLower()); // hello, world!
+            Console.WriteLine(text.Insert(6, " to an awesome")); // Hello, to an awesome World!
+            Console.WriteLine(text.Remove(5, 8)); // Hello
+            Console.WriteLine(text.Length); // 13
         }
     }
 }
