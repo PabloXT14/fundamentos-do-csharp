@@ -8,7 +8,7 @@ namespace MyApp
 
         static void Main(string[] args)
         {
-            EqualsComparison();
+            Indexes();
         }
 
         static void GenerateGuid()
@@ -98,6 +98,15 @@ namespace MyApp
 
             Console.WriteLine(number.Equals(10)); // true
             Console.WriteLine(number.Equals(11)); // false
+        }
+
+        static void Indexes()
+        {
+            string text = "Hello, World!";
+
+            Console.WriteLine(text[0]); // H
+            Console.WriteLine(text.IndexOf("o")); // 4
+            Console.WriteLine(text.LastIndexOf("o")); // 8
         }
     }
 }
