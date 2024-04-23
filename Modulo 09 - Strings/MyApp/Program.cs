@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 namespace MyApp
 {
@@ -8,7 +9,7 @@ namespace MyApp
 
         static void Main(string[] args)
         {
-            HandlingStrings();
+            StringBuilderMethod();
         }
 
         static void GenerateGuid()
@@ -137,6 +138,18 @@ namespace MyApp
 
             Console.WriteLine(text3);
             Console.WriteLine(text3.Trim()); // Think different
+        }
+
+        static void StringBuilderMethod()
+        {
+            // StringBuilder: classe que serve para criar strings dinamicamente, recomendado para strings com muito conteúdo, para ler ou criar de forma performática uma string que tenha muito conteúdo
+            var text = new StringBuilder("Hello, World!");
+
+            text.Append(" Thanks for using my program!");
+            text.Append(" I hope you enjoy it!");
+
+            Console.WriteLine(text); // o variável text é um objeto de StringBuilder, no entanto o Console.WriteLine converte o StringBuilder em uma string automaticamente
+            Console.WriteLine(text.ToString()); // o método ToString() converte o StringBuilder em uma string
         }
     }
 }
