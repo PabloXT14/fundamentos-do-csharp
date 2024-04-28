@@ -1,5 +1,6 @@
 using System;
 using System.Text;
+using System.IO;
 
 namespace HtmlEditor
 {
@@ -26,18 +27,23 @@ namespace HtmlEditor
 
         public static StringBuilder CaptureUserInput()
         {
-            Console.WriteLine("Digite o texto (ESC para sair)");
+            Console.WriteLine("Digite o que quiser (pressione Enter após cada linha, e digite 'sair' para finalizar)");
 
             Console.WriteLine(new string('-', Console.WindowWidth));
 
             var fileText = new StringBuilder();
 
-            do
+            while (true)
             {
                 var input = Console.ReadLine();
-                fileText.AppendLine(input);
 
-            } while (Console.ReadKey().Key != ConsoleKey.Escape);
+                if (input.ToLower() == "sair")
+                {
+                    break;
+                }
+
+                fileText.AppendLine(input);
+            }
 
             return fileText;
         }
@@ -54,14 +60,14 @@ namespace HtmlEditor
             if (option == "S")
             {
                 SaveFile(fileText);
-                Console.WriteLine("Pressione qualquer tecla para continuar...");
+                Console.WriteLine("\nPressione qualquer tecla para continuar...");
                 Console.ReadKey();
                 Menu.Show();
             }
             else if (option == "N")
             {
                 Console.WriteLine("Arquivo não foi salvo.");
-                Console.WriteLine("Pressione qualquer tecla para continuar...");
+                Console.WriteLine("\nPressione qualquer tecla para continuar...");
                 Console.ReadKey();
                 Menu.Show();
             }
