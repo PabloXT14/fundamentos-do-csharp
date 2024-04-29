@@ -4,7 +4,7 @@ namespace HtmlEditor
 {
     public static class Menu
     {
-        static int screenWidth = 70;
+        static int screenWidth = Console.WindowWidth;
 
         public static void Show()
         {
@@ -62,7 +62,7 @@ namespace HtmlEditor
         public static short WriteOptions()
         {
             Console.SetCursorPosition(2, 1);
-            Console.WriteLine("# Editor HTML");
+            Console.WriteLine("# EDITOR HTML");
 
             Console.SetCursorPosition(2, 2);
             Console.WriteLine(new string('-', screenWidth - 4));
@@ -94,7 +94,7 @@ namespace HtmlEditor
             switch (option)
             {
                 case 1: Editor.Show(); break;
-                case 2: Console.WriteLine("View"); break;
+                case 2: Viewer.Show("Texto exemplo para o <strong>Viewer</strong>."); break;
                 case 0:
                     {
                         Console.Clear();
