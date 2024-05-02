@@ -27,7 +27,7 @@ namespace HtmlEditor
 
         public static StringBuilder CaptureUserInput()
         {
-            Console.WriteLine("Digite o que quiser (pressione Enter após cada linha, e digite 'sair' para finalizar)");
+            Console.WriteLine("Digite o que quiser (pressione Enter após cada linha, e digite '!q' para finalizar)");
 
             Console.WriteLine(new string('-', Console.WindowWidth));
 
@@ -37,7 +37,7 @@ namespace HtmlEditor
             {
                 var input = Console.ReadLine();
 
-                if (input.ToLower() == "sair")
+                if (input.ToLower() == "!q")
                 {
                     break;
                 }
@@ -80,10 +80,10 @@ namespace HtmlEditor
 
         public static void SaveFile(StringBuilder fileText)
         {
-            Console.WriteLine("Nome do arquivo:");
+            Console.WriteLine("Nome do arquivo e extensão (ex: teste.html):");
 
             var fileName = Console.ReadLine();
-            var path = $@"{Environment.CurrentDirectory}\{fileName}.html";
+            var path = $@"{Environment.CurrentDirectory}\{fileName}";
 
             using (var file = new StreamWriter(path))
             {

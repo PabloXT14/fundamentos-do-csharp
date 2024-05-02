@@ -15,11 +15,19 @@ namespace HtmlEditor
             Console.WriteLine("# MODO DE VISUALIZAÇÃO");
             Console.WriteLine(new string('-', Console.WindowWidth));
 
-            Replace(text);
+            Console.Write("Digite o nome e extensão do arquivo (ex: teste.html) e que esteja no mesmo diretório que o programa: ");
+
+            var fileName = Console.ReadLine();
+            var path = $@"{Environment.CurrentDirectory}/{fileName}";
 
             Console.WriteLine(new string('-', Console.WindowWidth));
 
+            ViwerHtml(path);
+
+            // Replace(text);
+
             Console.ReadKey();
+
             Menu.Show();
         }
 
@@ -60,6 +68,35 @@ namespace HtmlEditor
             }
 
             Console.WriteLine();
+        }
+
+        public static void ViwerHtml(string filePath)
+        {
+            if (File.Exists(filePath))
+            {
+                Console.WriteLine("Conteúdo do arquivo HTML:");
+
+                Console.WriteLine(new string('-', Console.WindowWidth));
+
+                Console.ForegroundColor = ConsoleColor.Green;
+
+                using (var file = new StreamReader(filePath))
+                {
+                    Console.WriteLine(file.ReadToEnd());
+                }
+
+                Console.ResetColor();
+
+                Console.WriteLine(new string('-', Console.WindowWidth));
+
+                Console.WriteLine("Pressione qualquer tecla para continuar...");
+            }
+            else
+            {
+                Console.WriteLine("O arquivo HTML não existe. Por favor, edite o HTML primeiro.");
+
+                Console.WriteLine("Pressione qualquer tecla para continuar...");
+            }
         }
     }
 }
