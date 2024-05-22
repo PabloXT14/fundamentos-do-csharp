@@ -95,7 +95,7 @@ Além disso, é recomendado você instalar também no VS Code a extensão para C
     - Presente em todo projeto .NET
 - `Program.cs`:
     - Arquivo principal (C#)
-    - Posta de entrada
+    - Porta de entrada
     - Será o primeiro a ser executado
 
 ## Debug

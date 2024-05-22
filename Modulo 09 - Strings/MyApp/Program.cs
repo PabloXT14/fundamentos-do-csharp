@@ -60,7 +60,7 @@ namespace MyApp
 
             Console.WriteLine(text.CompareTo("Random Text")); // -1
 
-            Console.WriteLine(new string('-', lineWidth));
+            Console.WriteLine(new string('-', Console.WindowWidth));
 
             Console.WriteLine(text.Contains("World")); // true
             Console.WriteLine(text.Contains("world")); // false
@@ -77,7 +77,7 @@ namespace MyApp
             Console.WriteLine(text.StartsWith("hello", StringComparison.OrdinalIgnoreCase)); // true
             Console.WriteLine(text.StartsWith("Radom text")); // false
 
-            Console.WriteLine(new string('-', lineWidth));
+            Console.WriteLine(new string('-', Console.WindowWidth));
 
             Console.WriteLine(text.EndsWith("World!")); // true
             Console.WriteLine(text.EndsWith("world!")); // false

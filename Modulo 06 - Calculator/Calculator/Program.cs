@@ -10,11 +10,11 @@ namespace Calculator
         {
             Console.Clear();
 
-            Console.WriteLine(new string('-', lineWidth));
+            Console.WriteLine(new string('-', Console.WindowWidth));
 
-            Console.WriteLine(CentralizeText("CALCULADORA", lineWidth));
+            Console.WriteLine(CentralizeText("CALCULADORA", Console.WindowWidth));
 
-            Console.WriteLine(new string('-', lineWidth));
+            Console.WriteLine(new string('-', Console.WindowWidth));
 
             Menu();
         }
@@ -40,7 +40,7 @@ namespace Calculator
             Console.WriteLine("4 - Dividir");
             Console.WriteLine("5 - Sair");
 
-            Console.WriteLine(new string('-', lineWidth));
+            Console.WriteLine(new string('-', Console.WindowWidth));
 
             Console.Write("Selecione uma opção: ");
 
@@ -69,7 +69,7 @@ namespace Calculator
             Console.Write("Digite o segundo valor: ");
             float value2 = float.Parse(Console.ReadLine());
 
-            Console.WriteLine(new string('-', lineWidth));
+            Console.WriteLine(new string('-', Console.WindowWidth));
 
             float result = value1 + value2;
 
@@ -86,7 +86,7 @@ namespace Calculator
             Console.Write("Digite o segundo valor: ");
             float value2 = float.Parse(Console.ReadLine());
 
-            Console.WriteLine(new string('-', lineWidth));
+            Console.WriteLine(new string('-', Console.WindowWidth));
 
             float result = value1 - value2;
 
@@ -103,7 +103,7 @@ namespace Calculator
             Console.Write("Digite o segundo valor: ");
             float value2 = float.Parse(Console.ReadLine());
 
-            Console.WriteLine(new string('-', lineWidth));
+            Console.WriteLine(new string('-', Console.WindowWidth));
 
             float result = value1 / value2;
 
@@ -120,7 +120,7 @@ namespace Calculator
             Console.Write("Digite o segundo valor: ");
             float value2 = float.Parse(Console.ReadLine());
 
-            Console.WriteLine(new string('-', lineWidth));
+            Console.WriteLine(new string('-', Console.WindowWidth));
 
             float result = value1 * value2;
 

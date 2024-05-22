@@ -180,7 +180,7 @@ Exemplo:
     - Enumeradores (`Enums`)
     - Estruturas (`Structs`)
     - Tipos Nulos (`Nullable Types`) 
-- Cada tipo possui uma capacidade (de quando de dado ele consegue conter/guardar)
+- Cada tipo possui uma capacidade (de quanto de dado ele consegue conter/guardar)
 - Caso esta capacidade exceda, o programa gera um erro
 - Esta capacidade pré-definida ajuda na otimização do seu programa
 - Por exemplo, o `int` que usamos previamente:
@@ -766,7 +766,7 @@ static string RetornaNome(string nome, string sobrenome)
 - Exemplos de `Value Types`: `Built-in`, `Structs`, `Enums`
 - O `Garbage Collector` não acessa a `Stack`
 
-> Garbage Collector(Coletor de lixL): ferramenta de uma linguagem de programação para desalocar da memória valores/dados que não estão sendo mais utilizados. São importantes para otimizar a nossa aplicação, deixando-a mais performática.
+> Garbage Collector(Coletor de Lixo): ferramenta de uma linguagem de programação para desalocar da memória valores/dados que não estão sendo mais utilizados. São importantes para otimizar a nossa aplicação, deixando-a mais performática.
 
 Exemplo:
 ```cs

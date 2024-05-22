@@ -5,7 +5,7 @@ namespace TextEditor
 {
     class Program
     {
-        static int lineWidth = 70;
+        static int lineWidth = Console.WindowWidth;
 
         static void Main(string[] args)
         {

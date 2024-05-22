@@ -21,19 +21,20 @@ namespace Stopwatch
             Console.WriteLine("Minutos (ex: 1m = 1 minuto)");
             Console.WriteLine("0 - Sair");
 
-            Console.WriteLine(new string('-', lineWidth));
+            Console.WriteLine(new string('-', Console.WindowWidth));
 
             Console.Write("Opção: ");
             string data = Console.ReadLine().ToLowerInvariant();
 
             if (data == "0")
-                System.Environment.Exit(0);
+                Console.Clear();
+            System.Environment.Exit(0);
 
             char type = char.Parse(data.Substring(data.Length - 1, 1));
             int time = int.Parse(data.Substring(0, data.Length - 1));
             int multiplier = type == 'm' ? 60 : 1;
 
-            Console.WriteLine(new string('-', lineWidth));
+            Console.WriteLine(new string('-', Console.WindowWidth));
 
             PreStart();
 
